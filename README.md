@@ -1,4 +1,4 @@
-# gitpresentation
+# git study
 asd
 ad
 asd

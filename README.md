@@ -13,10 +13,10 @@ You need create a user [here](https://github.com/).
 # Basic Commands:
 
 ```sh
-$ git init
-$ git status
-$ git add .
-$ git rm arquivo.html -f
+$ git init           //initialization of empty git directory
+$ git status            
+$ git add .          //add files to git repository
+$ git rm arquivo.html -f //remove file from git
 $ git commit -m “mensagem do commit”
 
 $ git status -- arquivo.html (consigo resetar o arquivo para a versão anterior, se não tiver feito o git add ainda)

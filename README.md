@@ -22,7 +22,9 @@ $ git commit -m “mensagem do commit”
 $ git status -- arquivo.html (consigo resetar o arquivo para a versão anterior, se não tiver feito o git add ainda)
 
 ```
-![](https://github.com/fabioono25/gitstudy/blob/master/gitstatus.png)
+![Before run git add command](https://github.com/fabioono25/gitstudy/blob/master/gitstatus2.png)
+
+![After run git add command](https://github.com/fabioono25/gitstudy/blob/master/gitstatus.png)
 
 
 # About git-flow

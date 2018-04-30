@@ -4,10 +4,11 @@ The idea is to organize the study of Git, so we have some source for research as
 
 # What's Git
 
-  "Sistema de gestão de versão distribuído e sistema de gerenciamento de código fonte, com ênfase em velocidade."
+"Sistema de gestão de versão distribuído e sistema de gerenciamento de código fonte, com ênfase em velocidade."
+
+You need create a user [here](https://github.com/).
 
 ![](https://github.com/fabioono25/gitstudy/blob/master/git.png)
-
 
 # Basic Commands:
 
@@ -21,3 +22,14 @@ $ git commit -m “mensagem do commit”
 $ git status -- arquivo.html (consigo resetar o arquivo para a versão anterior, se não tiver feito o git add ainda)
 
 ```
+
+# About git-flow
+
+git-flow is a set of extensions that help you improve the git operations.
+
+[Download here.](https://danielkummer.github.io/git-flow-cheatsheet/index.pt_BR.html)
+
+![](https://github.com/fabioono25/gitstudy/blob/master/gitflow.png)
+
+
+

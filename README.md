@@ -196,7 +196,29 @@ $ git cherry-pick e43a6fd3e94888d76779ad79fb568ed180e5fcdf
 
 ## Clean/Reset Project:
 
+```
+git reset hash //apaga logs commits, mas mantem os arquivos
+git checkout -- .
+git clean -f //cuidado
+git push -f
+
+git reset HEAD~2 //erase 2 logs behind
+
+```
+
 ## Git-Stash:
+
+Guarda estados dos arquivos, reverte a branch para algo compatível com a cabeça da branch
+
+```
+git add .
+git stash //o arquivo que eu criei ficou na stash
+
+git stash list
+
+git stash pop (retorna o que foi colocado na pilha).
+
+```
 
 ## About git-flow
 

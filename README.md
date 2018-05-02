@@ -1,8 +1,8 @@
-# Git Study Notes
+## Git Study Notes
 
 The idea is to organize the study of Git, so we have some source for research as needed.
 
-# What's Git
+## What's Git
 
 "Sistema de gestão de versão distribuído e sistema de gerenciamento de código fonte, com ênfase em velocidade."
 
@@ -10,7 +10,7 @@ You need create a user [here](https://github.com/).
 
 ![](https://github.com/fabioono25/gitstudy/blob/master/git.png)
 
-# Basic Commands:
+## Basic Commands:
 
 ```sh
 $ git init           //initialization of empty git directory
@@ -26,10 +26,10 @@ $ git status -- arquivo.html (consigo resetar o arquivo para a versão anterior,
 
 ![After run git add command](https://github.com/fabioono25/gitstudy/blob/master/gitstatus.png)
 
-# Forms of Automatic Authentication:
+## Forms of Automatic Authentication:
 
 
-## Generation a new SSH key and add it to the ssh-agent:
+### Generation a new SSH key and add it to the ssh-agent:
 
 I've had problems with this type of authentication, but is the most recomended one:
 
@@ -52,7 +52,7 @@ When copy hash key previouly generated, enter in github -> Settings -> SSH and G
 
 ![](https://github.com/fabioono25/gitstudy/blob/master/pasteSSH.PNG)
 
-## Git-credentials
+### Git-credentials
 
 With git-credentials, it's possible create a local file that contains your login and password of github. It maybe incurs in security problems, but is an option:
 
@@ -65,21 +65,140 @@ https://user:password@github.com
 
 ```
 
-# Link a local project with repository:
+## Link a local project with repository:
 
-# Merge Commands:
+```sh
+git remote -v  //verificar se existe git configurado
 
-# Working with Tags:
+git remote add origin https://github.com/fabioono25/gitstudy.git
 
-# Rebase vs Merge:
+git push --set-upstream origin master
 
-# Using cherry-pick:
+git clone https://github.com/fabioono25/gitstudy.git
+```
 
-# Clean/Reset Project:
+## Merge Commands:
 
-# Git-Stash:
+Git fetch: atualizar o indicador de cada branch, sem que atualize em si a branch.
 
-# About git-flow
+Git pull: faz o fetch e o merge (2 comandos).
+
+![](https://github.com/fabioono25/gitstudy/blob/master/merge1.PNG)
+
+![](https://github.com/fabioono25/gitstudy/blob/master/merge2.PNG)
+
+```sh
+git merge origin master
+
+git merge
+
+git branch
+
+git log: Q to finish
+
+Reset: utilizar hash para retornar para a versão
+
+```
+## Logs:
+
+![](https://github.com/fabioono25/gitstudy/blob/master/logs.PNG)
+
+## Working with Tags:
+
+```sh
+git tag version //define tag
+git push --tags //upload tag by command line
+```
+![](https://github.com/fabioono25/gitstudy/blob/master/tag1.PNG)
+
+
+![](https://github.com/fabioono25/gitstudy/blob/master/tag2.PNG)
+
+
+![](https://github.com/fabioono25/gitstudy/blob/master/tag3.PNG)
+
+
+![](https://github.com/fabioono25/gitstudy/blob/master/tag4.PNG)
+
+
+![](https://github.com/fabioono25/gitstudy/blob/master/tag5.PNG)
+
+## Working with Branches:
+
+Use one branch per feature.
+
+```
+git branch feature/atualizacao_template
+git branch -D feature/nome_branch
+
+git checkout feature/nome_branch
+git checkout master
+
+git branch (visualizar a branch atual)
+
+```
+
+![](https://github.com/fabioono25/gitstudy/blob/master/branch1.PNG)
+
+![](https://github.com/fabioono25/gitstudy/blob/master/branch2.PNG)
+
+![](https://github.com/fabioono25/gitstudy/blob/master/branch3.PNG)
+
+## Merge x Rebase:
+
+### Merge
+
+Sempre partir de onde vc está, e quer saber o resultado final.
+
+![](https://github.com/fabioono25/gitstudy/blob/master/merge1_1.PNG)
+
+Mesma quantidade de commits.
+Ideal é remover a branch, pois já está na master.
+
+Git branch -D feature/nome_feature
+
+Git checkout -b feature/nova_branch (crio a branch e dou checkout para ela)
+
+### Rebase:
+
+Conflict Situation:
+
+![](https://github.com/fabioono25/gitstudy/blob/master/rebase1.PNG)
+
+
+Solução 1: Merge (da master dentro da branch B) - problemas nos logs dos commits - difícil tracking
+Merge é manutenção, não faz parte do meu trabalho de manutenção
+
+![](https://github.com/fabioono25/gitstudy/blob/master/rebase2.PNG)
+
+Solução 2: Rebase (atualizando o momento que este corte foi feito) - a idéia é que cada branch reflita o momento que foi atualizada
+
+![](https://github.com/fabioono25/gitstudy/blob/master/rebase3.PNG)
+
+![](https://github.com/fabioono25/gitstudy/blob/master/rebase4.PNG)
+
+![](https://github.com/fabioono25/gitstudy/blob/master/rebase5.PNG)
+
+
+## Using cherry-pick:
+
+
+![](https://github.com/fabioono25/gitstudy/blob/master/cherry2.PNG)
+
+
+Pick the hash
+![](https://github.com/fabioono25/gitstudy/blob/master/cherry1.PNG)
+
+Use hash
+```
+$ git cherry-pick e43a6fd3e94888d76779ad79fb568ed180e5fcdf
+```
+
+## Clean/Reset Project:
+
+## Git-Stash:
+
+## About git-flow
 
 git-flow is a set of extensions that help you improve the git operations.
 
@@ -87,5 +206,7 @@ git-flow is a set of extensions that help you improve the git operations.
 
 ![](https://github.com/fabioono25/gitstudy/blob/master/gitflow.png)
 
+## Helpfull links
 
+https://github.com/git-tips/tips
 

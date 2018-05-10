@@ -220,15 +220,76 @@ git stash pop (retorna o que foi colocado na pilha).
 
 ```
 
-## About git-flow
+## Pull Request:
+
+Pedido de inserção de determinada branch dentro da branch master
+
+0 | 1 # quantos commits a branch master possui a mais que esta branch.
+
+![](https://github.com/fabioono25/gitstudy/blob/master/pullRequest1.png)
+
+Reviewers: pedido para alguém revisar o código.
+
+Squash: reunir diversos commits em um só.
+
+Webhooks: Webhooks allow external services to be notified when certain events happen. When the specified events happen, we’ll send a POST request to each of the URLs you provide. Learn more in our Webhooks Guide.   
+
+## Git-Flow:
 
 git-flow is a set of extensions that help you improve the git operations.
 
-[Download here.](https://danielkummer.github.io/git-flow-cheatsheet/index.pt_BR.html)
+```
+apt-get install git-flow
+
+git flow init
+```
+
+[View here.](https://danielkummer.github.io/git-flow-cheatsheet/index.pt_BR.html)
 
 ![](https://github.com/fabioono25/gitstudy/blob/master/gitflow.png)
+
+![](https://github.com/fabioono25/gitstudy/blob/master/nvie-git-workflow-commands.png)
+
+
+![](https://github.com/fabioono25/gitstudy/blob/master/gitflow1.png)
+
+![](https://github.com/fabioono25/gitstudy/blob/master/gitflow2.png)
+
+![](https://github.com/fabioono25/gitstudy/blob/master/gitflow3.png)
+
+![](https://github.com/fabioono25/gitstudy/blob/master/gitflow4.png)
+
+![](https://github.com/fabioono25/gitstudy/blob/master/gitflow5.png)
+
+
+## Criando Arquivo Alias:
+
+```
+vi ~/.bashrc
+
+alias gs = ‘git status’
+alias gfp = ‘git fetch --prune’
+gffp teste_alias
+
+```
+![](https://github.com/fabioono25/gitstudy/blob/master/gitalias.png)
+
+## .gitignore:
+
+Examplo:
+
+*.java
+temporario*
+
+É possível colocar RegExp.
 
 ## Helpfull links
 
 https://github.com/git-tips/tips
+
+https://git-scm.com/book/pt-br/v1/Primeiros-passos
+
+https://danielkummer.github.io/git-flow-cheatsheet/index.pt_BR.html
+
+## Questions and Answers
 

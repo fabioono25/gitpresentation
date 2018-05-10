@@ -251,13 +251,13 @@ git flow init
 ![](https://github.com/fabioono25/gitstudy/blob/master/nvie-git-workflow-commands.png)
 
 
-![](https://github.com/fabioono25/gitstudy/blob/master/gitflow1.png)
+![](https://github.com/fabioono25/gitstudy/blob/master/gitFlow1.png)
 
-![](https://github.com/fabioono25/gitstudy/blob/master/gitflow2.png)
+![](https://github.com/fabioono25/gitstudy/blob/master/gitFlow2.png)
 
-![](https://github.com/fabioono25/gitstudy/blob/master/gitflow3.png)
+![](https://github.com/fabioono25/gitstudy/blob/master/gitFlow3.png)
 
-![](https://github.com/fabioono25/gitstudy/blob/master/gitflow4.png)
+![](https://github.com/fabioono25/gitstudy/blob/master/gitFlow4.png)
 
 ![](https://github.com/fabioono25/gitstudy/blob/master/gitflow5.png)
 
